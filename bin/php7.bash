@@ -32,6 +32,7 @@ commandFlags="--standard=PHPCompatibility \
 --runtime-set testVersion 7.0 \
 --extensions=php,phtml \
 --report-file=$reportFile \
+-d memory_limit=1024M \
 --report=json \
 -p";
 if [[ "$ignoreWarnings" == "true" ]]
