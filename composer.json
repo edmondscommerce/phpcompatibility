@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "edmondscommerce/jirashell": "Parent framework, allows easier behat setup"
+        "edmondscommerce/jirashell": "dev-master"
     },
     "minimum-stability": "dev",
     "autoload": {

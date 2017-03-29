@@ -1,0 +1,60 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "2f05955a061cc20ba89abac095ea3c01",
+    "packages": [
+        {
+            "name": "edmondscommerce/jirashell",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/edmondscommerce/jirashell.git",
+                "reference": "c74c21462ea221b01784758d340c4fe5f58f4262"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/edmondscommerce/jirashell/zipball/c74c21462ea221b01784758d340c4fe5f58f4262",
+                "reference": "c74c21462ea221b01784758d340c4fe5f58f4262",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EdmondsCommerce\\JiraShell\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "edmondscommerce",
+                    "email": "info@edmondscommerce.co.uk"
+                }
+            ],
+            "description": "A simple PHP class for adding issues on Jira",
+            "homepage": "https://www.edmondscommerce.co.uk",
+            "keywords": [
+                "Issue Tracking",
+                "jira",
+                "php",
+                "shell"
+            ],
+            "time": "2017-03-29 10:18:34"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "edmondscommerce/jirashell": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
