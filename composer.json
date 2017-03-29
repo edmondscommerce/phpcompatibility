@@ -29,13 +29,13 @@
     },
     "script": {
         "post-update-cmd": [
-            "php vendor/bin/phpcs --config-set installed_paths vendor/wimg/php-compatibility"
+            "bash ./addSniffs.bash"
         ],
         "post-install-cmd": [
-            "php vendor/bin/phpcs --config-set installed_paths vendor/wimg/php-compatibility"
+            "bash ./addSniffs.bash"
         ],
         "post-create-project-cmd": [
-            "php vendor/bin/phpcs --config-set installed_paths vendor/wimg/php-compatibility"
+            "bash ./addSniffs.bash"
         ]
     }
 }
