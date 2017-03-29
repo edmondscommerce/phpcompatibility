@@ -16,12 +16,26 @@
         }
     ],
     "require": {
-        "edmondscommerce/jirashell": "dev-master"
+        "edmondscommerce/jirashell": "dev-master",
+        "wimg/php-compatibility": "*",
+        "squizlabs/php_codesniffer": "2.*",
+        "simplyadmire/composer-plugins" : "@dev"
     },
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "EdmondsCommerce\\PhpCompatibility\\": "src/"
         }
+    },
+    "script": {
+        "post-update-cmd": [
+            "php vendor/bin/phpcs --config-set installed_paths vendor/wimg/php-compatibility"
+        ],
+        "post-install-cmd": [
+            "php vendor/bin/phpcs --config-set installed_paths vendor/wimg/php-compatibility"
+        ],
+        "post-create-project-cmd": [
+            "php vendor/bin/phpcs --config-set installed_paths vendor/wimg/php-compatibility"
+        ]
     }
 }
