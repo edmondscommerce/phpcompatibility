@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e99dfdfb392fdbfc35a738fac82370b2",
+    "hash": "edc9d0e854223ac3838041e23b270baf",
+    "content-hash": "d11233f35b185085c184383401c00bc3",
     "packages": [
         {
             "name": "edmondscommerce/jirashell",
@@ -45,59 +46,6 @@
                 "shell"
             ],
             "time": "2017-03-29 10:18:34"
-        },
-        {
-            "name": "simplyadmire/composer-plugins",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/SimplyAdmire/ComposerPlugins.git",
-                "reference": "d8380f670694c1c2330b22591ca74adc82cffe19"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/SimplyAdmire/ComposerPlugins/zipball/d8380f670694c1c2330b22591ca74adc82cffe19",
-                "reference": "d8380f670694c1c2330b22591ca74adc82cffe19",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0",
-                "squizlabs/php_codesniffer": "*"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": [
-                    "SimplyAdmire\\ComposerPlugins\\PhpCodesnifferStandardInstallerPlugin"
-                ]
-            },
-            "autoload": {
-                "psr-0": {
-                    "SimplyAdmire\\ComposerPlugins": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-3.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Rens Admiraal",
-                    "email": "rens@simplyadmire.com",
-                    "role": "lead"
-                }
-            ],
-            "description": "Composer plugin for installing PHP_CodeSniffer standards",
-            "keywords": [
-                "PHP_CodeSniffer",
-                "TYPO3 CMS",
-                "TYPO3 Flow",
-                "TYPO3 Neos",
-                "phpcs",
-                "standards",
-                "typo3"
-            ],
-            "abandoned": true,
-            "time": "2016-05-12 11:58:38"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -229,8 +177,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "edmondscommerce/jirashell": 20,
-        "simplyadmire/composer-plugins": 20
+        "edmondscommerce/jirashell": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
