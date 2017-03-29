@@ -18,8 +18,7 @@
     "require": {
         "edmondscommerce/jirashell": "dev-master",
         "wimg/php-compatibility": "*",
-        "squizlabs/php_codesniffer": "2.*",
-        "simplyadmire/composer-plugins" : "@dev"
+        "squizlabs/php_codesniffer": "2.*"
     },
     "minimum-stability": "dev",
     "autoload": {
