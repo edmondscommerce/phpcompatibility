@@ -1,24 +1,27 @@
 {
-  "name": "edmondscommerce/phpcompatibility",
-  "description": "A wrapper library to check a code base for issues with PHP versions and create Jira tickets",
-  "keywords": [
-    "PHP",
-    "Compatibility",
-    "Jira",
-    "Sniffer"
-  ],
-  "homepage": "https://www.edmondscommerce.co.uk",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "edmondscommerce",
-      "email": "info@edmondscommerce.co.uk"
+    "name": "edmondscommerce/phpcompatibility",
+    "description": "A wrapper library to check a code base for issues with PHP versions and create Jira tickets",
+    "keywords": [
+        "PHP",
+        "Compatibility",
+        "Jira",
+        "Sniffer"
+    ],
+    "homepage": "https://www.edmondscommerce.co.uk",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "edmondscommerce",
+            "email": "info@edmondscommerce.co.uk"
+        }
+    ],
+    "require": {
+        "edmondscommerce/jirashell": "Parent framework, allows easier behat setup"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "EdmondsCommerce\\PhpCompatibility\\": "src/"
+        }
     }
-  ],
-  "minimum-stability": "dev",
-  "autoload": {
-    "psr-4": {
-      "EdmondsCommerce\\PhpCompatibility\\": "src/"
-    }
-  }
 }
