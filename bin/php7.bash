@@ -33,6 +33,7 @@ commandFlags="--standard=PHPCompatibility \
 --extensions=php,phtml \
 --report-file=$reportFile \
 -d memory_limit=1024M \
+--ignore=public/dev \
 --report=json \
 -p";
 if [[ "$ignoreWarnings" == "true" ]]
