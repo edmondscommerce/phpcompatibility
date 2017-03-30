@@ -7,12 +7,12 @@ function usage(){
 
 echo "
 
-This script will run the code sniffer with PHP 7 standards checks against the target directory
+This script will run the code sniffer with PHP compatibility checks against the target directory and PHP version
 Only PHP and PHTML files will be checked and all non-php files and JS etc will be ignored
 
 Usage:
 
-./$0 [targetPath] (ignoreWarnings=false) (reportFile=\"report.json\")
+./$0 [targetPath] (phpVersion=7.0) (warningSeverity=5) (reportType="json") (reportFile=\"report.json\")
 
 "
 }
@@ -25,22 +25,23 @@ fi
 
 ### Parameters ###
 targetPath="$1"
-ignoreWarnings=${2:-"false"}
-reportFile=${3:-"report.json"}
+phpVersion=${2:-"7.0"}
+warningSeverity=${3:-"5"}
+reportType=${4:-"json"};
+reportFile=${5:-"report.json"}
+
+echo "Generating compatibility report for $phpVersion for code in $targetPath to a $reportType report format and logging it to $reportFile"
+echo "Warning severity level $warningSeverity":
 
 commandFlags="--standard=PHPCompatibility \
 --runtime-set testVersion 7.0 \
 --extensions=php,phtml \
 --report-file=$reportFile \
+--warning-severity=$warningSeverity \
 -d memory_limit=1024M \
 --ignore=public/dev \
---report=json \
+--report=$reportType \
 -p";
-if [[ "$ignoreWarnings" == "true" ]]
-then
-    commandFlags="$commandFlags \
-    -n"
-fi
 
 arguments="$commandFlags $targetPath"
 echo "
