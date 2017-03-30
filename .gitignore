@@ -1,1 +1,4 @@
 vendor
+bin/env
+bin/report.json
+bin/queue.json
